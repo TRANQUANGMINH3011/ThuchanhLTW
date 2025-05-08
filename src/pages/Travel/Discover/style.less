@@ -1,0 +1,29 @@
+
+.container {
+  padding: 24px;
+  
+  .filters {
+    margin-bottom: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .cardGrid {
+    margin-top: 24px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 16px;
+    
+    .filters {
+      flex-direction: column;
+      align-items: stretch;
+      
+      :global(.ant-select),
+      :global(.ant-input-number) {
+        width: 100% !important;
+      }
+    }
+  }
+}
